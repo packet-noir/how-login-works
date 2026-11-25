@@ -1,17 +1,17 @@
 ## IdP:
-The system that can confirm or deny your identity.
+The system that you prove your identity to.
 
 ## SP/RP:
-Application that wants to know who you are.
+Application that relies on an IdP to know who you are.
 
 ## Token: 
-Insight on who you are, issued by IdP.
+Collection of information about your identity, issued by IdP.
 
 ## Claim:
-A fact about your identity.
+A single piece of the information mentioned above.
 
 ## Assertion:
-Verified collection of claims.
+The totality of the claims about your identity, signed off by the IdP.
 
 ## Federation:
-Mutual trust between systems regarding user information
+Involves a system trusting another system's claims about an identity.
