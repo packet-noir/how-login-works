@@ -27,3 +27,13 @@ Configurations made in IdP and SP systems.
 
 ## What Goes Wrong
 Stolen assertions/tokens and sessions can result in unauthorized access.
+
+## Security Lessons Learned
+Trust is established by administrators configuring IdP and Service Provider systems. Setting this up allows users to login once, and
+receive access to various applications. These applications can grant this access without being entitled or storing the user's credentials.
+Essentially, storing and validating credentials became a completely separate job the Service Provider's do not need to implement themselves.
+
+## Future Improvements
+Polishing the diagram drafts.
+Decoding a token via jwt.io or jwt.ms
+Configure trust between an IdP and an SP.
