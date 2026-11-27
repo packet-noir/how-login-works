@@ -9,5 +9,4 @@ When you click login, Salesforce will know which IdP to redirect you to.
 The IdP is also configured to expect authentication requests from Salesforce.
 This trust relationship is established via configurations made in both systems.
 After the IdP authenticates you, it will deliver signed proof back to Salesforce.
-Salesforce then uses this signed assertion to grant you entry and access based on the information about your identity. All while Salesforce
-remains completely oblivious about your credentials.
+Salesforce then uses this signed assertion to grant you access, all while being completely oblivious to your credentials.
