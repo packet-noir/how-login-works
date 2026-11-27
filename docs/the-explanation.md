@@ -7,6 +7,6 @@ Walk me through everything that happened."
 Salesforce is likely set up to trust another application called an IdP that can verify you are who you claim to be.
 When you click login, Salesforce will know which IdP to redirect you to. 
 The IdP is also configured to expect authentication requests from Salesforce.
-This trust relationship is created by configurations made in both systems.
+This trust relationship is established via configurations made in both systems.
 After the IdP authenticates you, it will know where to deliver signed proof called an assertion or token, back to Salesforce.
 Salesforce then uses this signed assertion to grant you entry and access based on the information about your identity.
