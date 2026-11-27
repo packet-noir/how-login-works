@@ -8,3 +8,9 @@
 - Section 2 defines the attributes and claims the IdP will share with the Service Provider. 
 - Section 3 contains certificate information so the IdP can sign assertions.
 - Section 4 contains additional information that admins must configure on the Service Provider to establish this trust relationship.
+
+## Security Considerations
+After a successful SAML or OIDC sign-in, the IdP issues a bearer token that user-agents can present to 
+create a session with the receiving Service Provider. 
+
+Anyone who obtains and presents a valid copy of this token may be able to access the service as the authenticated user.
