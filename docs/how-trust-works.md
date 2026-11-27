@@ -14,3 +14,12 @@ After a successful SAML or OIDC sign-in, the IdP issues a bearer token that user
 create a session with the receiving Service Provider. 
 
 Anyone who obtains and presents a valid copy of this token may be able to access the service as the authenticated user.
+
+## Protections
+- This is why every step in these flows rely on TLS to protect against token and session cookie interception. 
+- Tokens are also short-lived to minimize the length of time a compromised or revoked token remains valid. 
+- Applications also check that tokens/assertions are meant for them. Attackers cannot simply reuse a token/assertion for
+another application that may trust the same IdP.
+- Applications must check the assertion/token signatures to ensure they come from the IdP they've been configured to trust.
+- MFA helps prevent attackers from signing in and obtaining IdP-issued tokens.
+It does not, by itself, prevent them from using stolen tokens or session cookies.
